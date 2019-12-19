@@ -15,7 +15,7 @@ const GoalList = () => {
       </ul>
     </div>
   ) : (
-    <h1>Add a Goal</h1>
+    <h3>Add some Goals...</h3>
   );
 };
 

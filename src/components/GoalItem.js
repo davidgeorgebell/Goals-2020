@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
+
+import { GoalContext } from '../contexts/GoalContext';
 
 const GoalItem = ({ goal }) => {
+  const { removeGoal } = useContext(GoalContext);
   return (
     <div>
-      <li>{goal.description}</li>
+      <li onClick={() => removeGoal(goal.id)}>{goal.description}</li>
     </div>
   );
 };

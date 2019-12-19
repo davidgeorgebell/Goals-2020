@@ -5,6 +5,7 @@ import './App.css';
 import Header from './components/Header';
 import GoalList from './components/GoalList';
 import GoalContextProvider from './contexts/GoalContext';
+import GoalForm from './components/GoalForm';
 
 function App() {
   const { darkMode, setDarkMode } = useContext(ThemeContext);
@@ -14,7 +15,8 @@ function App() {
         <div className={darkMode ? 'dark-mode' : 'light-mode'}>
           <Header setDarkMode={setDarkMode} darkMode={darkMode} />
           <main>
-            <h2>App components</h2>
+            <h1>Goals 2020</h1>
+            <GoalForm />
             <GoalList />
           </main>
         </div>
