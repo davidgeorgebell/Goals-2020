@@ -1,16 +1,25 @@
-import React from 'react';
-import ThemeContextProvider from './contexts/ThemeContext';
+import React, { useContext } from 'react';
+import { ThemeContext } from './contexts/ThemeContext';
 
 import './App.css';
-import HomePage from './pages/HomePage';
+import Header from './components/Header';
+import GoalList from './components/GoalList';
+import GoalContextProvider from './contexts/GoalContext';
 
 function App() {
+  const { darkMode, setDarkMode } = useContext(ThemeContext);
   return (
-    <div className='App'>
-      <ThemeContextProvider>
-        <HomePage />
-      </ThemeContextProvider>
-    </div>
+    <GoalContextProvider>
+      <div className='App'>
+        <div className={darkMode ? 'dark-mode' : 'light-mode'}>
+          <Header setDarkMode={setDarkMode} darkMode={darkMode} />
+          <main>
+            <h2>App components</h2>
+            <GoalList />
+          </main>
+        </div>
+      </div>
+    </GoalContextProvider>
   );
 }
 
