@@ -18,6 +18,7 @@ const GoalForm = () => {
         placeholder='Add a Goal'
         value={description}
         onChange={(event) => setDescription(event.target.value)}
+        size='35'
       />
     </form>
   );
