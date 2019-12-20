@@ -4,16 +4,7 @@ import uuid from 'uuid/v1';
 export const GoalContext = createContext();
 
 const GoalContextProvider = (props) => {
-  const [goals, setGoals] = useState([
-    {
-      description: 'oi',
-      id: 1
-    },
-    {
-      description: 'test',
-      id: 2
-    }
-  ]);
+  const [goals, setGoals] = useState([]);
 
   const addGoal = (description) => {
     setGoals([...goals, { description, id: uuid() }]);
