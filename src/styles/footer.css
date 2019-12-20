@@ -1,0 +1,19 @@
+footer {
+  width: 100%;
+  display: flex;
+  background-color: #9c27b0;
+  transition: background-color 0.5s ease-out;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+.footer-container {
+  display: flex;
+  margin: 0 auto;
+  font-size: 1.2em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-top: 4px;
+  margin-right: 2px;
+}

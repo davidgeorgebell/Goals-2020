@@ -6,6 +6,7 @@ import GoalList from './components/GoalList';
 import GoalContextProvider from './contexts/GoalContext';
 import GoalForm from './components/GoalForm';
 import Title from './components/Title';
+import Footer from './components/Footer';
 
 function App() {
   const { darkMode, setDarkMode } = useContext(ThemeContext);
@@ -19,6 +20,7 @@ function App() {
             <GoalForm />
             <GoalList />
           </main>
+          <Footer />
         </div>
       </div>
     </GoalContextProvider>
