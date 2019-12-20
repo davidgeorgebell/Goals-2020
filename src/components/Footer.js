@@ -6,7 +6,13 @@ const Footer = ({ darkMode, setDarkMode }) => {
   return (
     <div className={darkMode ? 'dark-mode' : 'light-mode'}>
       <div className='footer-container'>
-        <footer>Footer</footer>
+        <footer>
+          <a
+            href='https://github.com/davidgeorgebell'
+            style={{ color: `white` }}>
+            @davidgeorgebell
+          </a>
+        </footer>
       </div>
     </div>
   );
